@@ -1,0 +1,40 @@
+body {
+  background-color: #f5c8d1;
+  font-family: Varela, Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  background-color: #f4f4f4;
+  color: #666;
+  font-size: 2em;
+  padding: 20px;
+  margin: 10px;
+  position: relative;
+  text-align: left;
+
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+}
+
+.hashtag {
+  color: #f5c8d1;
+  font-family: 'Satisfy', cursive;
+  font-style: italic;
+}
+
+.username {
+  color: #E8667B;
+}
