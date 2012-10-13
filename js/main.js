@@ -21,8 +21,12 @@
         $(tweets).each(function(idx, tweet) {
           if (lastTweetLoaded == 0 || tweet.id > lastTweetLoaded) {
             var str = tweet.text;
-            $list.prepend('<li>' + str.style_tweet(str) + '</li>');
-            startPrepending = true;
+
+            $('<li style="display: none;">' + str.style_tweet(str) + '</li>')
+              .prependTo($list)
+              .fadeIn(1000);
+              
+           startPrepending = true;
           }
           lastTweetLoaded = tweet.id;
         });
@@ -32,7 +36,9 @@
   }
   
   $(document).ready(function() {
+    // Load on start
     loadTweets();
-    //setInterval(loadTweets, 2000);
+    // Check for new tweets every 2 seconds
+    setInterval(loadTweets, 2000);
   });
 })();
